@@ -8,3 +8,11 @@ public class Expense
     public int TravelId { get; set; }
     public Travel Travel { get; set; }
 }
+
+public enum ExpenseType
+{
+    Transportation,
+    Accommodation,
+    Meals,
+    Other
+}
