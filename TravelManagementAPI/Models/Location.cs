@@ -1,7 +1,10 @@
-﻿namespace TravelManagementAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TravelManagementAPI.Models;
 
 public class Location
 {
+    [Key]
     public int Id { get; set; }
     public string Name { get; set; }
     public double Latitude { get; set; }

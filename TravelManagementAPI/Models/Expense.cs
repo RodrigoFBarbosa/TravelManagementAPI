@@ -1,7 +1,10 @@
-﻿namespace TravelManagementAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TravelManagementAPI.Models;
 
 public class Expense
 {
+    [Key]
     public int Id { get; set; }
     public string Description { get; set; }
     public decimal Amount { get; set; }

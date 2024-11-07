@@ -1,8 +1,7 @@
 ﻿using TravelManagementAPI.Models;
 
-namespace TravelManagementAPI.Repository
+namespace TravelManagementAPI.Repository;
+
+public interface ITravelRepository : IRepository<Travel>
 {
-    public interface ITravelRepository : IRepository<Travel>
-    {
-    }
 }

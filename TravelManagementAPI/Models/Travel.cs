@@ -1,7 +1,10 @@
-﻿namespace TravelManagementAPI.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TravelManagementAPI.Models;
 
 public class Travel
 {
+    [Key]
     public int id { get; set; }
     public string Destination { get; set; }
     public DateTime StartDate { get; set; }
