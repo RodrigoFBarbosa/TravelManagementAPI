@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TravelManagementAPI.Models;
 
 namespace TravelManagementAPI.Controllers;
 
@@ -6,8 +7,8 @@ namespace TravelManagementAPI.Controllers;
 [ApiController]
 public class TravelController : Controller
 {
-    public IActionResult Index()
+    public async Task<IActionResult<IEnumerable<Travel>>> Index()
     {
-        return View();
+        
     }
 }
