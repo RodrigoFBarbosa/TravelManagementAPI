@@ -7,8 +7,5 @@ namespace TravelManagementAPI.Controllers;
 [ApiController]
 public class TravelController : Controller
 {
-    public async Task<IActionResult<IEnumerable<Travel>>> Index()
-    {
-        
-    }
+    
 }
